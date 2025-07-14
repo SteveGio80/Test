@@ -4,11 +4,14 @@ services:
     environment:
       DATABASE_HOST: ep-frosty-shadow-aexobfx1-pooler.c-2.us-east-2.aws.neon.tech
       DATABASE_PORT: 5432
-      DATABASE_NAME: lightdash           # Change if your DB name is different
-      DATABASE_USERNAME: neondb
+      DATABASE_NAME: <your_actual_database_name>   # Replace this!
+      DATABASE_USERNAME: neondb_owner              # Confirm this
       DATABASE_PASSWORD: Phen0mSauce19002!
+      DATABASE_SSL: "true"
       LIGHTDASH_SECRET: supersecretkey123
       LIGHTDASH_PORT: 8080
     ports:
       - "8080:8080"
+    volumes:
+      - /home/itadmin/my_dbt_project:/dbt
     restart: unless-stopped
