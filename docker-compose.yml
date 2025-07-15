@@ -2,7 +2,7 @@ services:
   lightdash:
     image: lightdash/lightdash:latest
     environment:
-      DATABASE_HOST: ep-frosty-shadow-aexobfx1-pooler.c-2.us-east-2.aws.neon.tech
+      DATABASE_HOST: ep-autumn-sea-aeyv34za-pooler.c-2.us-east-2.aws.neon.tech
       DATABASE_PORT: 5432
       DATABASE_NAME: neondb
       DATABASE_USERNAME: neondb_owner
