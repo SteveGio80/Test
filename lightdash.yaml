@@ -1,0 +1,14 @@
+dbt:
+  projectDir: .
+  profilesDir: ~/.dbt
+  target: dev
+
+warehouse:
+  type: postgres
+  host: ep-autumn-sea-aeyv34za-pooler.c-2.us-east-2.aws.neon.tech
+  port: 5432
+  database: neondb
+  username: neondb_owner
+  password: npg_0ECLzgxKnsi5
+  ssl:
+    sslmode: require
