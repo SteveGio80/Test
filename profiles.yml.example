@@ -1,0 +1,14 @@
+my_dbt_project:
+  outputs:
+    dev:
+      dbname: neondb
+      host: ep-autumn-sea-aeyv34za-pooler.c-2.us-east-2.aws.neon.tech
+      password: npg_0ECLzgxKnsi5
+      port: 5432
+      schema: public
+      sslmode: verify-ca
+      sslrootcert: /etc/ssl/certs/ca-certificates.crt
+      threads: 1
+      type: postgres
+      user: neondb_owner
+  target: dev
