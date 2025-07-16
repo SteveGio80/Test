@@ -1,6 +1,7 @@
 dbt:
   projectDir: .
   profilesDir: ~/.dbt
+  profile: my_dbt_project
   target: dev
 
 warehouse:
