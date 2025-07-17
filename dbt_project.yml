@@ -24,3 +24,6 @@ seeds:
       alias: slm_data_seed
     phenom_domains:
       alias: phenom_domains_seed
+    data_365:
+      alias: data_365_seed
+
