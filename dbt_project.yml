@@ -1,3 +1,5 @@
+config-version: 2
+
 name: 'my_dbt_project'
 version: '1.0.0'
 
@@ -19,11 +21,9 @@ models:
     +materialized: view
 
 seeds:
+  seeds:
   my_dbt_project:
     slm_data:
-      alias: slm_data_seed
     phenom_domains:
-      alias: phenom_domains_seed
     data_365:
-      alias: data_365_seed
 
