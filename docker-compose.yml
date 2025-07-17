@@ -2,16 +2,19 @@ services:
   lightdash:
     image: lightdash/lightdash:latest
     environment:
-      DATABASE_HOST: ep-autumn-sea-aeyv34za-pooler.c-2.us-east-2.aws.neon.tech
-      DATABASE_PORT: 5432
-      DATABASE_NAME: neondb
-      DATABASE_USERNAME: neondb_owner
-      DATABASE_PASSWORD: Phen0mSauce19002!
-      DATABASE_SSL: "true"
+      PGHOST: ep-autumn-sea-aeyv34za-pooler.c-2.us-east-2.aws.neon.tech
+      PGPORT: 5432
+      PGDATABASE: neondb
+      PGUSER: neondb_owner
+      PGPASSWORD: npg_0ECLzgxKnsi5
+      PGSSLMODE: require
       LIGHTDASH_SECRET: supersecretkey123
       LIGHTDASH_PORT: 8080
+      SITE_URL: http://0.0.0.0:8080
+      LIGHTDASH_PROJECTS_DIR: /dbt
     ports:
       - "8080:8080"
     volumes:
       - /home/itadmin/my_dbt_project:/dbt
+      - /home/itadmin/.dbt:/root/.dbt
     restart: unless-stopped

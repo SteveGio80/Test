@@ -1,1 +1,1 @@
-select * from {{ ref('netflix_shows') }}
+select * from {{ ref('slm_data') }}
